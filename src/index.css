@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #fff;
+  font-size: 16px;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+}
+
+.mycontainer {
+  @apply mx-auto max-w-6xl px-4;
+}
+
+.carousel .carousel-item,
+.carousel,
+.carousel .carousel-item img {
+  border-radius: 15px !important;
+  overflow: hidden !important;
+}
+
+.bannartext {
+  background: linear-gradient(90deg, #151515 0%, rgba(21, 21, 21, 0) 100%);
+  border-radius: 15px;
+}
+
+.redbutton {
+  @apply bg-[#FF3811] border-2 border-[#FF3811] text-white py-3 px-6 inline-block rounded-sm;
+}
+
+.socialLink ul {
+  display: flex;
+  gap: 15px;
+}
+
+.socialLink ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  border-radius: 50%;
+  height: 40px;
+  background-color: #5b5959;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+}
+
+.socialLink ul li:hover {
+  background-color: #ff3811;
+}
+
+#shared .bannarWrapper {
+  background-image: url(../src/Assets/bannar.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 110px 80px;
+  border-radius: 10px;
+  margin-top: 80px;
+}
